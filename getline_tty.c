@@ -12,7 +12,7 @@ char *getline_tty(char *buffer, char **tokens)
 
 	if (tty == 1)
 	{
-		printf("Cisfun$ ");
+		write(1, "$ ", 2);
 	}
 	input = getline(&buffer, &size, stdin);
 	if (tty == 0 && input == EOF)

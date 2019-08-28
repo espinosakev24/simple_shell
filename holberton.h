@@ -7,7 +7,9 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include "holberton.h"
+int env_size(char **environ);
 char *_memset(char *s, char b, unsigned int n);
+void *_calloc(unsigned int nmemb, unsigned int size);
 char *getline_tty(char *buffer, char **tokens);
 int check_negative_child(char *buffer, char **tokens);
 void exec_command(char **tokens, char *buffer, char **environ);
