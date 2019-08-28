@@ -10,10 +10,9 @@ int main(int argc, char **argv, char **envp)
 {
 	static int main_var = 1;
 	char **tokens = malloc(sizeof(char *) * 64);
-	pid_t pid_fork, child_p;
 	char *buffer;
-	(void)argv;
-	(void)argc;
+	pid_t pid_fork, child_p;
+	(void)argv, (void)argc;
 
 	signal(SIGINT, SIG_IGN);
 	buffer = malloc((sizeof(char)) * 32);
@@ -28,7 +27,8 @@ int main(int argc, char **argv, char **envp)
 		if (_strcmp(buffer, "exit") == 0)
 			{	free(tokens);
 				free(buffer);
-				exit(1);	}
+				exit(1);
+			}
 		pid_fork = fork();
 		if (pid_fork == -1)
 			check_negative_child(buffer, tokens);
@@ -36,10 +36,11 @@ int main(int argc, char **argv, char **envp)
 		{	tokens = tok_buffer(tokens, buffer);
 			if (access(tokens[0], F_OK))
 			{	exec_command(tokens, buffer, envp);
-				err_execve(buffer, tokens);	}
-			else
-			{	execve(tokens[0], tokens, NULL);
 				err_execve(buffer, tokens);
+			}
+			else
+			{ execve(tokens[0], tokens, NULL);
+			err_execve(buffer, tokens);
 			}}
 		else
 		{
