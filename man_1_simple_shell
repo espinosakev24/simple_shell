@@ -1,0 +1,35 @@
+.TH _Simple-Shell "27 08 19" "version 1.0"
+.SH NAME
+_Simple-Shell\-command-line interpreter
+.SH SYNOPSIS
+.B #include "holberton.h"
+
+.B bash [gcc -Wall -Werror -Wextra -pedantic *.c -o hsh]
+
+.SH DESCRIPTION
+Shell is a command line interpreter that provides a command line user interface for operating systems.
+The shell is an interactive command.
+
+.SH RETURN VALUE
+When a program is executed (a UNIX command), apart from redirecting its input and its output, it collects the result of its execution and itsoutput.
+
+The result is a numerical value, usually 0, if everything went well, perror if there was any kind of error.
+
+.SH OPTIONS
+
+.............................................
+
+
+.SH EXAMPLE
+.............................................
+
+.SH BUGS
+At the moment no bugs founded.
+
+.SH AUTORS
+
+Liliana Ospina (894@holbertonschool.com), Kevin Espinosa (916@holbertonschool.com).
+
+.SH SEE ALSO
+.B Simple-Shell
+
