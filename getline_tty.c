@@ -2,6 +2,7 @@
 /**
  * getline_tty - function that read a line and checks teletypes
  * @buffer: string that will stores the input
+ * @tokens: double pointer to tokenized buffer
  * Return: buffer.
  */
 char *getline_tty(char *buffer, char **tokens)
