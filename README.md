@@ -44,7 +44,7 @@ $gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 Besides that execute it for seein the output at shell
 
 ```sh 
-$./"./hsh"
+$ ./hsh
 ```
 
 ## Testing
@@ -85,6 +85,7 @@ $
 ```
 ## Example
 
+```
 root@vagrant-ubuntu-trusty-64:~/simple_shell# ./hsh
 #cisfun$ ls-la
 ./hsh: 1: ls-la: not found
@@ -108,7 +109,7 @@ total 84 \
 -rw-r--r-- 1 root root   867 Aug 28 21:02 shell.c\
 -rw-r--r-- 1 root root   659 Aug 28 21:22 tmp_file_12345\
 ```
-```
+
 
 ### List of allowed functions and system calls
 
