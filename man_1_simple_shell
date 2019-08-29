@@ -99,7 +99,7 @@ br.
 \&$
 
 .SH BUGS
-At the moment no bugs founded.
+The copy of the env is not being freed, neither the variable that stores each string of the path
 
 .SH AUTORS
 
