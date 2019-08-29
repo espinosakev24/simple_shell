@@ -7,7 +7,7 @@
  * @environ: double pointer to the environ variable
  * Return: path if exists
  */
-char *check_path(char **paths, char *command, char **tokens, char **environ)
+char *check_path(char **paths, char *command, char **tokens)
 {
 	int a = 0;
 
@@ -17,7 +17,7 @@ char *check_path(char **paths, char *command, char **tokens, char **environ)
 		_strcat(paths[a], command);
 		if (access(paths[a], F_OK) == 0)
 		{
-			execve(paths[a], tokens, environ);
+			execve(paths[a], tokens, NULL);
 			return (paths[a]);
 		}
 		a++;

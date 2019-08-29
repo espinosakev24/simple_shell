@@ -6,7 +6,7 @@
  * @envp: double pointer to the enviroment variable
  * Return: 0.
  */
-int main(int argc, char **argv, char **envp)
+int main(int argc, char **argv)
 {
 	static int main_var = 1;
 	char **tokens = malloc(sizeof(char *) * 64);
@@ -29,13 +29,17 @@ int main(int argc, char **argv, char **envp)
 				free(buffer);
 				exit(1);
 			}
+		if (_strcmp(buffer, "env") == 0)
+		{
+			print_env();
+		}
 		pid_fork = fork();
 		if (pid_fork == -1)
 			check_negative_child(buffer, tokens);
 		else if (pid_fork == 0)
 		{	tokens = tok_buffer(tokens, buffer);
 			if (access(tokens[0], F_OK))
-			{	exec_command(tokens, buffer, envp);
+			{	exec_command(tokens, buffer);
 				err_execve(buffer, tokens);
 			}
 			else
