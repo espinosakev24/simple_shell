@@ -1,5 +1,9 @@
 #include "holberton.h"
-int print_env(void)
+/**
+ * print_env - function that prints the env variable
+ * Return: void function
+ */
+void print_env(void)
 {
 	int n = 0;
 
@@ -9,5 +13,5 @@ int print_env(void)
 		write(1, "\n", 1);
 		n++;
 	}
-	return (0);
+	exit(1);
 }
