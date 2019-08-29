@@ -89,24 +89,24 @@ root@vagrant-ubuntu-trusty-64:~/simple_shell# ./hsh
 #cisfun$ ls-la
 ./hsh: 1: ls-la: not found
 #cisfun$ ls -l
-total 84
--rw-r--r-- 1 root root   173 Aug 28 21:02 AUTHORS
--rw-r--r-- 1 root root  2604 Aug 28 21:50 README.md
--rw-r--r-- 1 root root  1768 Aug 28 21:02 auxiliary_functions.c
--rw-r--r-- 1 root root  1085 Aug 28 21:02 builtins.c
--rw-r--r-- 1 root root   390 Aug 28 21:02 environment.c
--rw-r--r-- 1 root root   394 Aug 28 21:02 execute.c
--rw-r--r-- 1 root root   871 Aug 28 21:02 holberton.h
--rwxr-xr-x 1 root root 18763 Aug 28 21:03 hsh
--rw-r--r-- 1 root root  2157 Aug 28 21:02 man_1_simple_shell
--rw-r--r-- 1 root root   471 Aug 28 21:02 parse_line.c
--rw-r--r-- 1 root root   461 Aug 28 21:02 parse_line2.c
--rw-r--r-- 1 root root   828 Aug 28 21:02 path.c
--rw-r--r-- 1 root root  1875 Aug 28 21:02 printing_functions.c
--rw-r--r-- 1 root root   339 Aug 28 21:22 read_line.c
--rw-r--r-- 1 root root   666 Aug 28 21:02 run.c
--rw-r--r-- 1 root root   867 Aug 28 21:02 shell.c
--rw-r--r-- 1 root root   659 Aug 28 21:22 tmp_file_12345
+total 84 \
+-rw-r--r-- 1 root root   173 Aug 28 21:02 AUTHORS\
+-rw-r--r-- 1 root root  2604 Aug 28 21:50 README.md\
+-rw-r--r-- 1 root root  1768 Aug 28 21:02 auxiliary_functions.c\
+-rw-r--r-- 1 root root  1085 Aug 28 21:02 builtins.c\
+-rw-r--r-- 1 root root   390 Aug 28 21:02 environment.c\
+-rw-r--r-- 1 root root   394 Aug 28 21:02 execute.c\
+-rw-r--r-- 1 root root   871 Aug 28 21:02 holberton.h\
+-rwxr-xr-x 1 root root 18763 Aug 28 21:03 hsh\
+-rw-r--r-- 1 root root  2157 Aug 28 21:02 man_1_simple_shell\
+-rw-r--r-- 1 root root   471 Aug 28 21:02 parse_line.c\
+-rw-r--r-- 1 root root   461 Aug 28 21:02 parse_line2.c\
+-rw-r--r-- 1 root root   828 Aug 28 21:02 path.c\
+-rw-r--r-- 1 root root  1875 Aug 28 21:02 printing_functions.c\
+-rw-r--r-- 1 root root   339 Aug 28 21:22 read_line.c\
+-rw-r--r-- 1 root root   666 Aug 28 21:02 run.c\
+-rw-r--r-- 1 root root   867 Aug 28 21:02 shell.c\
+-rw-r--r-- 1 root root   659 Aug 28 21:22 tmp_file_12345\
 ```
 ```
 
