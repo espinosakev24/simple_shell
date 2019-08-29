@@ -13,7 +13,7 @@ char *getline_tty(char *buffer, char **tokens)
 
 	if (tty == 1)
 	{
-		write(1, "$ ", 2);
+		_puts("$ ");
 	}
 	input = getline(&buffer, &size, stdin);
 	if (tty == 0 && input == EOF)

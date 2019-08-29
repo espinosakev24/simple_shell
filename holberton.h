@@ -14,9 +14,11 @@ char *getline_tty(char *buffer, char **tokens);
 int check_negative_child(char *buffer, char **tokens);
 void exec_command(char **tokens, char *buffer, char **environ);
 char *sw_enter_key(char *buffer);
+void _puts(char *str);
 char **main_print_env(char **tokens);
 char **tok_buffer(char **tokens, char *buffer);
 void err_execve(char *buffer, char **tokens);
+int _putchar(char c);
 /* FREES FUNCTIONS */
 char **out_memory_check(char **ptr);
 void free_grid(char **grid);
