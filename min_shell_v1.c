@@ -26,7 +26,7 @@ int main(int argc, char **argv, char **envp)
 		if (_strcmp(buffer, "exit") == 0)
 			{	free(tokens);
 				free(buffer);
-				exit(1); }
+				exit(0); }
 		if (_strcmp(buffer, "env") == 0)
 		{	print_env();
 			continue; }
