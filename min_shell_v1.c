@@ -28,7 +28,8 @@ int main(int argc, char **argv, char **envp)
 				free(buffer);
 				exit(1); }
 		if (_strcmp(buffer, "env") == 0)
-			print_env();
+		{	print_env();
+			continue; }
 		pid_fork = fork();
 		if (pid_fork == -1)
 			check_negative_child(buffer, tokens);

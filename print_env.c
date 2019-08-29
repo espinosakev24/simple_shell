@@ -13,5 +13,4 @@ void print_env(void)
 		write(1, "\n", 1);
 		n++;
 	}
-	exit(1);
 }
