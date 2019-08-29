@@ -1,27 +1,102 @@
-.TH _Simple-Shell "27 08 19" "version 1.0"
-.SH NAME
-_Simple-Shell\-command-line interpreter
-.SH SYNOPSIS
-.B #include "holberton.h"
+.TH hsh 1 "27 08 19" "version 1.0" "hsh General Commands Man"
 
-.B bash [gcc -Wall -Werror -Wextra -pedantic *.c -o hsh]
+.SH NAME
+
+.B simple-Shell - hsh
+-command line interpreter or shell
+
+.SH SYNOPSIS
+
+.B ./hsh
+.I (no options yet)
 
 .SH DESCRIPTION
+
 Shell is a command line interpreter that provides a command line user interface for operating systems.
 The shell is an interactive command.
 
 .SH RETURN VALUE
-When a program is executed (a UNIX command), apart from redirecting its input and its output, it collects the result of its execution and itsoutput.
+
+When a program is executed (a UNIX command), apart from redirecting its input and itsoutput, it collects the result of its execution and itsoutput.
 
 The result is a numerical value, usually 0, if everything went well, perror if there was any kind of error.
 
-.SH OPTIONS
+.SH INVOCATION
 
-.............................................
+Compile simple_shell with the GNU Compiler Collection, using gcc plus the below specified flags:
+.P
+.RS
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.P
+.RE
+simple_shell can be run in interactive mode by entering the below command on the command line followed by "enter." Note that the prompt ('$') will appear and you will then be in interactive mode and able to enter commands followed by "enter."
+.P
+.RS
+.B $ ./hsh
+.P
+.RE
+simple_shell can be run in non-interactive mode through the use of shell scripts. This can involve the use of piping ('|'):
+.P
+.RS
+.B echo 'pwd' | ./hsh
 
+.SH BUILTINS
+
+The following builtin commands are supported:
+
+.IT
+.B env
+- prints the environment variables
+
+.B exit
+- exits the program
 
 .SH EXAMPLE
-.............................................
+
+Example of builtin command:
+.IP
+.br
+.\&
+.RS
+\&$ env
+.br
+\&TERM=xterm-256color
+.br
+\&SHELL=/bin/bash
+.br
+\&SSH_CLIENT=10.0.2.2 50046 22
+.br
+\&OLDPWD=/home/vagrant
+.br
+\&SSH_TTY=/dev/pts/0
+.br
+\&LC_ALL=en_US
+.br
+\&USER=vagrant
+.br
+\&MAIL=/var/mail/vagrant
+.br
+\&PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+.br
+\&PWD=/home/vagrant/simple_shell
+.br
+\&LANG=en_US.UTF-8
+.br
+\&SHLVL=1
+.br
+\&HOME=/home/vagrant
+.br
+\&LOGNAME=vagrant
+.br
+\&SSH_CONNECTION=10.0.2.2 50046 10.0.2.15 22
+.br
+\&LESSOPEN=| /usr/bin/lesspipe %s
+.br
+\&LESSCLOSE=/usr/bin/lesspipe %s %s
+br.
+\&_=./hsh
+.br
+\&$
 
 .SH BUGS
 At the moment no bugs founded.
